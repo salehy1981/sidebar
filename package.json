@@ -1,0 +1,60 @@
+{
+  "name": "labs",
+  "version": "1.0.0",
+  "description": "demo app for graphs and animations",
+  "main": "src/index.js",
+  "author": "Shimrit (Shimi) Yacobi",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "grommet": "^2.7.11",
+    "grommet-icons": "^4.3.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-router-dom": "4.3.1",
+    "styled-components": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.9.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.8.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint-fix": "eslint src --fix",
+    "prettier": "pretty-quick --staged"
+  },
+  "pre-commit": [
+    "lint-fix",
+    "prettier",
+    "test"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
